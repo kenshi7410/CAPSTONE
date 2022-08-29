@@ -11,34 +11,404 @@
     <!-- font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <!-- boostrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- my css -->
     <link rel="stylesheet" href="./CSS/index.css">
 </head>
 
 <body>
     <header class="header">
-    <div class="container">
-        <div class="navbar">
-        <div class="logo">
-            <a href="#">Pooch Care
-            </a>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#">Pooch Care
+                    </a>
+                </div>
+                <div class="nav">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+            </div>
         </div>
-        <div class="nav">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Gallery</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-            <i class="fa-solid fa-moon"></i>
-        </div>
-    </div>
-    </div>
     </header>
+    <section class="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/banner1.jpg" class="d-block w-100" alt="banner1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner2.jpg" class="d-block w-100" alt="banner2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner3.jpg" class="d-block w-100" alt="banner3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner4.jpg" class="d-block w-100" alt="banner4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="ABOUTUS">
+        <div class="container">
+            <div class="ABOUTUS-item">
+                <div class="ABOUTUS-title">
+                    <h3>About Us</h3>
+                    <h2>We love your pets like they are our own</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem
+                        tenetur consequatur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                        cubilia Curae;
+                        Nulla mollis dapibus nunc, ut rhoncus
+                        turpis sodales quis. </p>
+                    <a href="#" class="read">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features bg-light py-5">
+        <div class="container">
+            <div class="grids-area-hny main-cont-wthree-fea row">
+                <div class="col-lg-4 col-sm-6 grids-feature">
+                    <div class="area-box">
+                        <div class="icon">
+                            <span><i class="fa-solid fa-snowflake"></i></span>
+                        </div>
+                        <h4><a href="#feature" class="title-head">Dog Walking</a></h4>
+                        <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor
+                            sit amet Ut blandit eu leo.</p>
+                        <a href="#read" class="read">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 grids-feature mt-sm-0">
+                    <div class="area-box mb-lg-0">
+                        <div class="icon">
+                            <span class="fa fa-cutlery"></span>
+                        </div>
+                        <h4><a href="#feature" class="title-head">Healthy Meals</a></h4>
+                        <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor
+                            sit amet Ut blandit eu leo.</p>
+                        <a href="#read" class="read">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 grids-feature mt-lg-0">
+                    <div class="area-box mb-lg-0">
+                        <div class="icon">
+                            <span class="fa fa-sign-language"></span>
+                        </div>
+                        <h4><a href="#feature" class="title-head">Pet Sitting</a></h4>
+                        <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor
+                            sit amet Ut blandit eu leo.</p>
+                        <a href="#read" class="read">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 grids-feature">
+                    <div class="area-box">
+                        <div class="icon">
+                            <span class="fa fa-sitemap"></span>
+                        </div>
+                        <h4><a href="#feature" class="title-head">Dog Activities</a></h4>
+                        <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor
+                            sit amet Ut blandit eu leo.</p>
+                        <a href="#read" class="read">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 grids-feature mt-sm-0">
+                    <div class="area-box mb-lg-0">
+                        <div class="icon">
+                            <span class="fa fa-shower"></span>
+                        </div>
+                        <h4><a href="#feature" class="title-head">Pet Daycare</a></h4>
+                        <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor
+                            sit amet Ut blandit eu leo.</p>
+                        <a href="#read" class="read">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 grids-feature mt-lg-0">
+                    <div class="area-box">
+                        <div class="icon">
+                            <span class="fa fa-user-md"></span>
+                        </div>
+                        <h4><a href="#feature" class="title-head">Pet Grooming</a></h4>
+                        <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet laoreet. Lorem ipsum dolor
+                            sit amet Ut blandit eu leo.</p>
+                        <a href="#read" class="read">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services py-5">
+        <div class="container">
+            <div class="row">
+                <div class="image">
+                    <img src="./img/ab.jpg" alt="ab">
+                </div>
+                <div class="text">
+                    <h4>Why Choose Us</h4>
+                    <h2>What We Offer for You</h2>
+                    <p class="p-text">Lorem ipsum dolor sit amet, consectetur adipisicingelit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et
+                        dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud.Lorem ipsum dolor sit amet, consectetur adipisicingelit,
+                    </p>
+
+                    <ul>
+                        <li><span class="fa fa-check"></span>
+                            <p> Certified Groomer</p>
+                        </li>
+                        <li><span class="fa fa-check"></span>
+                            <p> 10 Years of Experience</p>
+                        </li>
+                        <li><span class="fa fa-check"></span>
+                            <p> Pet Lover</p>
+                        </li>
+                        <li><span class="fa fa-check"></span>
+                            <p> Customer Supports</p>
+                        </li>
+                        <li><span class="fa fa-check"></span>
+                            <p> Veterinary Help</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="number">
+        <div class="container">
+            <div class="d-flex flex-row justify-content-between align-items-center">
+                <div class="p-2 number-text">
+                    <p>730</p>
+                    <h4>Happy Clients</h4>
+                </div>
+                <div class="p-2 number-text">
+                    <p>80</p>
+                    <h4>Professionals</h4>
+                </div>
+                <div class="p-2 number-text">
+                    <p>812</p>
+                    <h4>Adopted Pets</h4>
+                </div>
+                <div class="p-2 number-text">
+                    <p>90</p>
+                    <h4>Awards</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="plan">
+        <div class="container">
+            <div class="plan-head text-center">
+                <h4>Our Plans</h4>
+                <h2>Affordable Packages</h2>
+            </div>
+            <div class="plan-body">
+                <div class="plan-item">
+                    <div class="pricing">
+                        <div class="item-top ">
+                            <h4>Free Package</h4>
+                            <h2><span>$</span>0<p>/month</p>
+                            </h2>
+                        </div>
+                        <div class="item-bottom">
+                            <div class="item-bottom-list">
+                                <ul>
+                                    <li>
+                                        <p>5 Dog Walk</p>
+                                    </li>
+                                    <li>
+                                        <p>3 Vet Visit</p>
+                                    </li>
+                                    <li>
+                                        <p>3 Pet Spa</p>
+                                    </li>
+                                    <li>
+                                        <p>Free Supports</p>
+                                    </li>
+                                    <li>
+                                        <p>Customer Support</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="buy-buttom">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan-item plan-item-activated">
+                    <div class="pricing pricing-activated">
+                        <div class="item-top item-top-2">
+                            <h5>Save 10%</h5>
+                            <h4>Standard Package</h4>
+                            <h2><span>$</span>39<p>/month</p>
+                            </h2>
+                        </div>
+                        <div class="item-bottom item-bottom-2">
+                            <div class="item-bottom-list">
+                                <ul>
+                                    <li>
+                                        <p>5 Dog Walk</p>
+                                    </li>
+                                    <li>
+                                        <p>3 Vet Visit</p>
+                                    </li>
+                                    <li>
+                                        <p>3 Pet Spa</p>
+                                    </li>
+                                    <li>
+                                        <p>Free Supports</p>
+                                    </li>
+                                    <li>
+                                        <p>Customer Support</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="buy-buttom">
+                                <a href="#">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plan-item">
+                    <div class="pricing">
+                        <div class="item-top">
+                            <h4>Pro Package</h4>
+                            <h2><span>$</span>89<p>/month</p>
+                            </h2>
+                        </div>
+                        <div class="item-bottom">
+                            <div class="item-bottom-list">
+                                <ul>
+                                    <li>
+                                        <p>5 Dog Walk</p>
+                                    </li>
+                                    <li>
+                                        <p>3 Vet Visit</p>
+                                    </li>
+                                    <li>
+                                        <p>3 Pet Spa</p>
+                                    </li>
+                                    <li>
+                                        <p>Free Supports</p>
+                                    </li>
+                                    <li>
+                                        <p>Customer Support</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="buy-buttom">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="new">
+        <div class="container">
+            <div class="new-contact">
+            <div class="new-title">
+                <h5> Better pet nutrition.</h5>
+                <h3> The finest fresh food and all your pet needs.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet elit consec tetur
+                    adipisi elit.
+                    Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus explicabo
+                    officia.</p>
+            </div>
+            <div class="new-video">
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/101587706?h=187bfc0989" width="950" height="510" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="TESTIMONIALS">
+        <div class="container">
+            <div class="TESTIMONIALS-heading">
+
+            </div>
+            <div class="TESTIMONIALS-body">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="carousel-item-left">
+                            
+                        </div>
+                        <div class="carousel-item-right">
+                            
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
     <footer>
 
     </footer>
+
+
+
+    <!-- java -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

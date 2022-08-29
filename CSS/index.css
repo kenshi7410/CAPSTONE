@@ -11,6 +11,30 @@ font-weight: 400;
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 48px 25px;
+}
+a.read{
+    
+        font-size: 0.85rem;
+            padding: 0;
+            border-bottom: 2px solid #189a46;
+            color: #000c04;
+            transition: 0.3s ease-in-out;
+            font-weight: 600;
+            border-radius: 0;
+            margin-top: 20px;
+            display: inline-block;
+            text-transform: capitalize;
+            text-decoration: none;
+        
+}
+.header{
+    /* position: fixed;
+    top: 40px;
+    right: 0;
+    left: 0;
+    z-index: 1030; */
+    background-color: white;
 }
 .header .navbar{
     display: flex;
@@ -24,4 +48,325 @@ padding: 25px 0;
 .header .nav a{
     text-decoration: none;
     color: #000c04;
+}
+.ABOUTUS .ABOUTUS-item{
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+    align-items: center;
+}
+.ABOUTUS .ABOUTUS-item h3{
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: #f53626;
+}
+.ABOUTUS .ABOUTUS-item h2{
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+.ABOUTUS .ABOUTUS-item p{
+    margin: 16px 0;
+    padding: 0;
+    font-size: 0.95em;
+    line-height: 28px;
+}
+
+.features .area-box{
+padding: 40px 30px;
+    background-color:#fff;
+    position: relative;
+    margin-bottom: 30px;
+}
+.features .area-box .icon span{
+    color: #189a46;
+    font-size: 30px;
+}
+.features .area-box h4 a{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: block;
+    color: #000c04;
+    text-decoration: none;
+}
+.features .area-box p{
+    font-size: 0.97em;
+    line-height: 28px;
+    color: #696969;
+    margin: 0 0;
+}
+.services .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.services .row .image{
+    max-width: 50%;
+}
+.services .row .image img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+.services .row .text{
+    max-width: 50%;
+    align-self: center;
+}
+.services .row .text h4{
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: #f53626;
+    margin: 0;
+}
+.services .row .text h2{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+.services .row .text .p-text{
+    margin: 15px 0 35px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24.5px;
+    color: rgb(149, 148, 148);
+}
+.services .row .text ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.services .row .text li{
+    font-size: 0.85rem;
+    line-height: 26px;
+    color:#000c04;
+    margin: 15px 0;
+    font-weight: 700;
+}
+.services .row .text ul span{
+color: #189a46;
+margin-right: 12px;
+background: #f9f7fe;
+font-size: 0.7rem;
+padding: 8px;
+border-radius: 50%;
+display: inline-block;
+}
+.services .row .text ul p{
+display: inline-block;
+margin: 0;
+font-weight: 700;
+font-size: 0.8rem;
+}
+.number{
+    background-color: #189a46;
+}
+.number .number-text{
+    max-width: 25%;
+}
+.number .number-text p{
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 60px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.number .number-text h4{
+font-size: 1rem;
+    line-height: 25px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 0;
+    opacity: 0.6;
+    font-weight: 400;
+}
+.plan{
+    padding-top: 1.3rem;
+    background-color: rgb(249 247 254);
+}
+.plan .plan-head{
+text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.plan .plan-head h4{
+letter-spacing: 1px;
+color: #f53626;
+font-weight: 700;
+font-size: 1.3rem;
+line-height: 30px;
+}
+.plan .plan-head h2{
+    margin-bottom: 48px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 48px;
+}
+.plan .plan-body{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0 5% auto;
+    width: 90%;
+    text-align: center;
+   
+}
+.plan .plan-body .plan-item{
+    background-color: #fff;
+    border-radius: 6px;
+    align-self: center;
+}
+.plan .plan-body .plan-item .pricing{
+    padding: 2.85rem 2rem;
+    border-right: 0;
+}
+.plan .plan-body .plan-item .item-top h4{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    line-height: 30px;
+    font-weight: 700;
+}
+.plan .plan-body .plan-item .item-top h2{
+font-size: 2rem;
+    line-height: 45px;
+    margin: 15px 0 20px;
+    font-weight: 700;
+    color: #189a46;
+}
+.plan .plan-body .plan-item .item-top span{
+    font-size: 1.3rem;
+    vertical-align: text-top;
+}
+.plan .plan-body .plan-item .item-top p{
+    display: inline;
+    font-size: 0.85rem;
+    line-height: 25px;
+    color: #999;
+    font-weight: 400;
+}
+.plan .plan-body .plan-item .item-bottom{
+    padding-top: 0.85rem;
+    text-align: center;
+}
+.plan .plan-body .plan-item .item-bottom .item-bottom-list ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.plan .plan-body .plan-item .item-bottom .item-bottom-list li{
+    margin-bottom: 5px;
+    color: #304659;
+}
+.plan .plan-body .plan-item .item-bottom .item-bottom-list li p{
+font-size: 0.9rem;
+    line-height: 28px;
+    font-weight: normal;
+    align-self: center;
+    padding-top: 6px;
+    margin: 0;
+}
+.plan .plan-body .plan-item .item-bottom .buy-buttom{
+    margin-top: 32px;
+}
+.plan .plan-body .plan-item .item-bottom .buy-buttom a{
+padding: 12px 35px;
+font-size: 0.9rem;
+line-height: 28px;
+text-transform: capitalize;
+font-weight: 400;
+border-radius: 10px;
+background-color: #189a46;
+color: #fff;
+text-decoration: none;
+}
+/* phần khác */
+.plan .plan-body .plan-item-activated{
+    z-index: 10;
+    margin: 0;
+    box-shadow: 0 10px 30px 0 rgb(17 17 17 / 9%);
+    border-radius: 6px;
+}
+.plan .plan-body .plan-item .pricing-activated{
+    padding: 0;
+
+}
+.plan .plan-body .plan-item .item-top-2{
+    background-color: #189a46;
+    padding: 48px 40px 8px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+ 
+}
+.plan .plan-body .plan-item .item-top-2 h5{
+font-size: 0.75rem;
+    line-height: 20px;
+    color: #189a46;
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+.plan .plan-body .plan-item .item-top-2 h4{
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    line-height: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+.plan .plan-body .plan-item .item-top-2 h2{
+    color: #fff;
+}
+.plan .plan-body .plan-item .item-top-2 p{
+    color: #fff;
+}
+.plan .plan-body .plan-item .item-bottom-2{
+    padding: 32px 40px 56px;
+}
+.new{
+    text-align: center;
+    padding: 48px 0;
+}
+.new .new-contact{
+    margin: 0 100px;
+}
+.new .new-contact .new-title h5{
+        text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: #f53626;
+    margin: 0;
+}
+.new .new-contact .new-title h3{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: capitalize; 
+    margin: 0;
+}
+.new .new-contact .new-title p{
+    margin-top: 16px;
+    font-size: 1rem;
+    color: #696969;
+}
+.TESTIMONIALS{
+    background-color: #696969;
+    height: 100px;
 }
