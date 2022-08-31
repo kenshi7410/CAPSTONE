@@ -10,13 +10,7 @@ body {
     font-size: 20px;
     font-weight: 400;
 }
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 48px 25px;
-}
-.header{
+.header {
     position: fixed;
     top: 40px;
     right: 0;
@@ -25,22 +19,29 @@ body {
     background-color: white;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
 }
-.header .container-header{
+
+.header .container-header {
     padding: 0;
 }
-.header .navbar{
-    display: flex;
-justify-content: space-between;
 
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
 }
-.header .logo a{
+
+.header .nav-toggler {
+    display: none;
+}
+
+.header .logo a {
     text-decoration: none;
     color: #189a46;
     font-size: 1.7rem;
     font-weight: 700;
-    
+
 }
-.header .nav a{
+
+.header .nav a {
     text-decoration: none;
     color: #000c04;
     margin: 14px 12px;
@@ -48,10 +49,12 @@ justify-content: space-between;
     position: relative;
     transition: all .5s;
 }
-.header .nav .home{
+
+.header .nav .home {
     color: #189a46;
 }
-.header .nav a::after{
+
+.header .nav a::after {
     content: "";
     width: 0;
     background-color: #189a46;
@@ -61,17 +64,25 @@ justify-content: space-between;
     bottom: 0;
     transition: all .5s;
 }
-.header .nav a:hover::after{
-width: 100%;
+
+.header .nav a:hover::after {
+    width: 100%;
 }
-.header .nav a:hover{
-color: #189a46;
+
+.header .nav a:hover {
+    color: #189a46;
 }
-.header .nav i{
+
+.header .nav i {
     color: #000c04;
     padding: 14px 12px;
     font-size: 1rem;
     line-height: 1.5;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 25px;
 }
 
 .carousel {
@@ -180,6 +191,10 @@ color: #189a46;
     margin-top: 20px;
     text-decoration: none;
     display: inline-block;
+    transition: all 0.5s ease-in-out;
+}
+.about .about-content .about-text a:hover {
+    color: #189a46;
 }
 
 .history {
@@ -330,6 +345,10 @@ color: #189a46;
 text-decoration: none;
 color: #000c04;
     font-weight: 700;
+    transition: all .5s;
+}
+.content .content-info .content-right .content-item .content-text a:hover{
+    color: #189a46;
 }
 .content .content-info .content-right .content-item .content-text p{
     margin: 0;
@@ -367,8 +386,15 @@ color: #000c04;
 }
 .team img{
     width: 100%;
+    height: auto;
     border-radius: 10px;
+    transition: transform 0.3s linear;
+    display: block;
 }
+.team .item-img{
+    overflow: hidden;
+}
+
 .team .team-item .item-info{
     text-align: center;
 }
@@ -381,6 +407,14 @@ margin: 16px 0 0;
     line-height: 26px;
     color: #000c04;
     font-weight: 700;
+    transition: all .5s;
+}
+.team .team-item:hover .item-info a{
+color: #189a46;
+}
+.team .team-item:hover .item-img img{
+    transform: scale(1.1)
+    
 }
 .team .team-item .item-info p{
 font-size: 0.85rem;
@@ -401,105 +435,313 @@ margin: 0;
     text-align: center;
     background: rgb(147 107 232 / 5%);
     color: #189a46;
+    transition: all .5s;
+}
+.team .team-item .item-info .social a:hover{
+    background-color: #189a46;
+    color: #fff;
 }
 .team .team-item .item-info .social i{
     font-size: 12px;
     line-height: 30px;
 }
-.footer{
+.footer {
     background-color: #111;
 }
-.footer .footer-content{
+
+.footer .footer-content {
     display: flex;
     justify-content: space-between;
 }
-.footer .footer-content .footer-info{
+
+.footer .footer-content .footer-info {
     width: 50%;
     margin-top: 20px;
 }
-.footer .footer-content .footer-info h5{
+
+.footer .footer-content .footer-info h5 {
     color: #fff;
     font-size: 1rem;
     line-height: 26px;
     font-weight: 700;
     margin-bottom: 25px;
 }
-.footer .footer-content .footer-info p{
+
+.footer .footer-content .footer-info p {
     font-size: 0.85rem;
     color: #696969;
     line-height: 28px;
     margin: 0;
 }
-.footer .footer-content .footer-info span{
-font-weight: bolder;
+
+.footer .footer-content .footer-info span {
+    font-weight: bolder;
 }
-.footer .footer-content .footer-info a{
+
+.footer .footer-content .footer-info a {
     text-decoration: none;
     color: #696969;
 }
-.footer .footer-content .footer-info a:hover{
+
+.footer .footer-content .footer-info a:hover {
     text-decoration: underline;
     color: #fff;
 }
-.footer .footer-content .footer-info .footer-social{
+
+.footer .footer-content .footer-info .footer-social {
     margin-top: 20px;
 }
-.footer .footer-content .footer-info .footer-social a{
+
+.footer .footer-content .footer-info .footer-social a {
     font-size: .8rem;
     margin-right: 15px;
 }
-.footer .footer-content .footer-list{
+
+.footer .footer-content .footer-list {
     display: flex;
     width: 50%;
     margin-top: 10px;
 }
-.footer .footer-content .footer-list .footer-item{
+
+.footer .footer-content .footer-list .footer-item {
     width: calc(100%/3);
 
 }
-.footer .footer-content .footer-list .footer-item h2{
-margin-bottom: 25px;
-font-size: 1rem;
-color: #fff;
-line-height: 26px;
+
+.footer .footer-content .footer-list .footer-item h2 {
+    margin-bottom: 25px;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 26px;
     font-weight: 700;
 }
-.footer .footer-content .footer-list .footer-item ul{
+
+.footer .footer-content .footer-list .footer-item ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.footer .footer-content .footer-list .footer-item li{
+
+.footer .footer-content .footer-list .footer-item li {
     margin-bottom: 5px;
 }
-.footer .footer-content .footer-list .footer-item a{
+
+.footer .footer-content .footer-list .footer-item a {
     text-decoration: none;
     color: #696969;
     font-size: 0.85rem;
 }
-.footer .footer-content .footer-list .footer-item a:hover{
+
+.footer .footer-content .footer-list .footer-item a:hover {
     text-decoration: underline;
     color: #fff;
 }
+
 .footer .footer-copy {
     text-align: center;
     margin-top: 48px;
     border-top: 1px solid rgba(103, 99, 99, 0.14);
     padding-top: 24px;
 }
-.footer .footer-copy p{
+
+.footer .footer-copy p {
     margin-bottom: 0;
     color: #696969;
     font-size: 0.85rem;
 }
-.footer .footer-copy a{
+
+.footer .footer-copy a {
     color: #f53626;
     opacity: 0.9;
     text-decoration: none;
 }
-.footer .footer-copy a:hover{
+
+.footer .footer-copy a:hover {
     text-decoration: underline;
 }
-.footer .footer-container{
+
+.footer .footer-container {
     padding-bottom: 24px;
+}
+/* respon */
+
+
+/* desktop */
+@media screen and (max-width:1200px) {
+    
+    .container{
+        padding: 35px 25px;
+    }
+    .content .content-info .content-right .content-item{
+        margin-bottom: 30px;
+    }
+}
+/* tablet */
+@media screen and (max-width:992px) {
+    html, body{
+        font-size: 16px;
+    }
+    .header .nav {
+        display: none;
+    }
+
+    .header .nav-toggler {
+        display: inline-block;
+
+    }
+
+    .header .nav-toggler a {
+        background-color: transparent;
+        border: none;
+        color: #189a46;
+        font-size: 2rem;
+        margin-right: 20px;
+    }
+    .about .about-content .about-info h4{
+        line-height: 40px;
+    }
+    .about .about-content .about-text p{
+        line-height: 20px;
+    }
+    .about .about-content .about-text a{
+        margin-top: 10px;
+    }
+    .history .history-content{
+        max-width: 500px;
+    }
+    .content .content-info .content-right .content-item .content-text p{
+        line-height: 20px;
+    }
+    .content .content-info .content-left p{
+        margin: 10px 0 0;
+        line-height: 20px;
+    }
+    .content{
+        padding: 0;
+    }
+    .team{
+        padding: 0;
+    }
+    .team .team-title{
+        margin-bottom: 35px;
+    }
+    .team .team-grid{
+    grid-gap: 20px;
+    }
+    .footer .footer-copy {
+        margin-top: 15px;
+    }
+}
+/* phone ngang */
+@media screen and ( max-width:768px){
+    html, body{
+        font-size: 13px;
+    }
+    .header {
+        top: 20px;
+    }
+    .container{
+        padding: 25px 20px;
+    }
+    .carousel{
+        margin-top: 50px;
+    }
+    .about{
+        padding:20px 0;
+    }
+    .about .about-content .about-text p{
+        margin-bottom: 8px;
+    }
+    .history .history-content{
+        max-width: 350px;
+    }
+    .history .history-content .history-grid{
+        grid-gap: 10px;
+        margin-top: 20px;
+    }
+    .content .content-info .content-right .content-item .content-icon{
+        padding: 0;
+    }
+    .content .content-info .content-left h3{
+        line-height: 30px;
+    }
+    .content .content-info .content-right .content-item{
+        margin-bottom: 15px;
+    }
+    .team .team-title{
+        margin-bottom: 20px;
+    }
+    .team .team-grid{
+        grid-gap: 10px;
+    }
+    .footer .footer-content .footer-info h5 {
+        margin-bottom: 5px;
+        line-height: 10px;
+    }
+
+    .footer .footer-content .footer-info p {
+        line-height: 15px;
+    }
+
+    .footer .footer-content .footer-info .footer-social {
+        margin-top: 10px;
+    }
+
+    .footer .footer-content .footer-list .footer-item h2 {
+        margin-bottom: 5px;
+        line-height: 10px;
+    }
+
+    .footer .footer-copy {
+        padding-top: 5px;
+    }
+}
+/* phone dọc */
+@media screen and (max-width:576px){
+    html, body{
+        font-size: 10px;
+    }
+    .header {
+        top: 10px;
+    }
+    .container{
+        padding: 10px;
+    }
+    .about .about-content .about-text p{
+        line-height: 15px;
+    }
+    .about .about-content .about-info h4{
+        line-height: 25px;
+    }
+    .about .about-content .about-info h3{
+        line-height: 16px;
+    }
+    .content .content-info .content-right .content-item .content-text p{
+        line-height: 10px;
+    }
+    .content .content-info .content-left p{
+        margin: 0;
+    }
+    .team .team-title h2{
+        line-height: 20px;
+    }
+    .team .team-item .item-info h3{
+        margin-top: 8px;
+    }
+    .team .team-item .item-info p{
+        line-height: 10px;
+    }
+    .team .team-item .item-info .social a{
+        width: 15px ;
+        height: 15px;
+    }
+    .footer .footer-content .footer-info{
+        margin-top: 10px;
+    }
+    .footer .footer-content .footer-info .footer-social a{
+        margin-right: 10px;
+    }
+    .footer .footer-container{
+        padding-bottom: 15px;
+    }
 }
